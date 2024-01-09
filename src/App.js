@@ -6,7 +6,7 @@ function App() {
       <section className="side-bar">
         <button>+ New chat</button>
         <ul className="history"></ul>
-        <nav><p>Made by Isaac</p></nav>
+        <nav><p>Made by Isaac Busee</p></nav>
       </section>
       <section className="main">
         <h1>IsaacGPT</h1>

@@ -6,10 +6,15 @@ const getMessages = async () => {
     method: "POST",
     body: JSON.stringify({
       message: "hello how are you?"
-    })
+    }),
+    headers: {
+      "Content-Type": "application/json"
+    }
   }
     try {
-      await fetch("http://localhost:8000/completions", options)
+      const response = await fetch("http://localhost:8000/completions", options)
+      const data = await response.json()
+      console.log(data)
     } 
     catch (error) {
       console.log(error)
